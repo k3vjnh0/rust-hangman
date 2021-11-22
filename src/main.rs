@@ -75,7 +75,7 @@ fn select_word() -> String {
 
     let mut file_contents = String::new();
     file.read_to_string(&mut file_contents)
-        .expect("An error has occured while reading this file!");
+        .expect("An error has occurred while reading this file!");
 
     let available_words: Vec<&str> = file_contents.trim().split("\n").collect();
 
